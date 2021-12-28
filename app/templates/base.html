@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% block title_prefix %}{% endblock %}Princeton University Robotics Club</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+  <meta property="og:title" content="Princeton University Robotics Club">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://robotics.princeton.edu">
+  <meta property="og:description" content="The official website of the Princeton University Robotics Club. We build robots by jumping in headfirst."/>
+</head>
+
+<body>
+  {% block body %}{% endblock %}
+</body>
+</html>

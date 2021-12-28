@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def home_view():
-    return "<h1>Hello World</h1>"
+def competition_view():
+    return render_template("competition.html")
