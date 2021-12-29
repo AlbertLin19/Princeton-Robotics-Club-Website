@@ -6,15 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% block title_prefix %}{% endblock %}Princeton University Robotics Club</title>
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
 
   <meta property="og:title" content="Princeton University Robotics Club">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://robotics.princeton.edu">
   <meta property="og:description" content="The official website of the Princeton University Robotics Club. We build robots by jumping in headfirst."/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid pl-4">
+          <a class="navbar-brand me-4" href="/"><img src="{{ url_for('static', filename='base/navbar_logo.png') }}" height="64"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">2021 Micromouse Competition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Join</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Members</a></li>
+                  <li><a class="dropdown-item" href="#">Leadership</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
   {% block body %}{% endblock %}
+
+  <footer>
+
+    <div class="row py-4 px-6">
+
+      <div class="col-md-4 py-4 d-flex justify-content-center text-center">
+        <a href="https://www.princeton.edu/"><img src="{{ url_for('static', filename='base/Princeton_logo.png') }}" height="50"></a>
+      </div>
+
+      <div class="col-md-4 py-4 d-flex justify-content-center text-center">
+        Contact Us:&nbsp;<a href="mailto:robot@princeton.edu">robot@princeton.edu</a>
+      </div>
+
+      <div class="col-md-4 py-4 d-flex justify-content-center text-center">
+        <div class="d-flex justify-content-end text-end">
+          © 2020 The Trustees of<br>
+          Princeton University
+        </div>
+      </div>
+
+    </div>
+    
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
