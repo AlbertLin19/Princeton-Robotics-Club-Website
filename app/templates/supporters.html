@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title_prefix %}Supporters - {% endblock %}
+
+{% block body %}
+
+<div class="hero-image-supporters">
+<div class="hero-text">
+    <h1 class="display-3"><b>Supporters</b></h1>
+</div>
+</div>
+
+<div class="container my-4 pt-4">
+    <h4 class="fw-light">We couldn’t work on any of our amazing robotics projects without our supporters.</h4>
+    <br>
+    <h4 class="fw-light">We are so lucky to have the following groups supporting our endeavor into robotics:</h4>
+
+    <br>
+    <hr>
+    <br>
+
+    <h4 class="fw-light">Supporters</h4>
+    <br>
+    <br>
+    <div class="row d-flex align-items-center">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-4">
+            <img style="object-fit: cover;" src="{{ url_for('static', filename='supporters/engineering-logo.png') }}" width=300>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-4">
+            <img style="object-fit: cover;" src="{{ url_for('static', filename='supporters/keller_center_logo.png') }}" width=300>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-4">
+            <img style="object-fit: cover;" src="{{ url_for('static', filename='supporters/MAE.png') }}" width=300>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-4">
+            <img style="object-fit: cover;" src="{{ url_for('static', filename='supporters/ELE.jpg') }}" width=300>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-4">
+            <img style="object-fit: cover;" src="{{ url_for('static', filename='supporters/CST+Logo.jpg') }}" width=300>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-4">
+            <img style="object-fit: cover;" src="{{ url_for('static', filename='supporters/PU-standard.png') }}" width=300>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIsECoum_G6I_-484A3A5CUETZ4acyG1Jc19_4SxESl0Su6A/viewform?embedded=true" width="640" height="864" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+{% endblock %}

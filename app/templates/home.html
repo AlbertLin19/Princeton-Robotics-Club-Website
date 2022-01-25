@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title_prefix %}{% endblock %}
+
+{% block body %}
+
+
+<div class="hero-image-home">
+<div class="hero-text">
+    <h1 class="display-3"><b>Princeton University Robotics Club</b></h1>
+    <h1 class="display-6"><b><small>BUILD THE FUTURE</small></b></h1>
+</div>
+</div>
+
+<div class="container my-4 pt-4">
+    <h1 class="display-6 text-center py-2">We build robots by jumping in headfirst.</h1>
+    <h1 class="display-6 text-center py-2"><span style="font-size: 20px;">Robot: a machine capable of carrying out a complex series of actions automatically, especially one programmable by a computer.<br>Robotics: the branch of technology that deals with the design, construction, operation, and application of robots.<br>The future: a world of robots and people working together to solve problems.</span></h1>
+</div>
+
+<div class="container py-4">
+    <div class="row align-items-center">
+        <div class="col-md-6 my-2 d-flex justify-content-center">
+            <img style="object-fit: cover;" class="me-4" src="{{ url_for('static', filename='home/robots.jpg') }}" height="300px;" width="auto;">
+        </div>
+        <div class="col-md-6 my-2">
+            <h1 class="display-6 text-center"><span style="font-size: 24px;">Our Projects</span></h1>
+            <p class="fw-light text-center">Find out about what projects we’re working on and what projects we’ve done in the past.<p>
+            <div class="row align-items-center my-4"><div class="col d-flex justify-content-center"><a type="button" class="btn btn-outline-dark text-center" href="/projects/">LEARN MORE</a></div></div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-4 p-4">
+    <figure>
+        <blockquote class="blockquote">
+          <p>“Despite all this rapid change in the computing industry, we are still at the beginning of the digital revolution. Take artificial intelligence (AI) as an example. Think of all the time we spend manually organizing and performing mundane activities, from scheduling meetings to paying the bills. In the future, an AI agent will know that you are at work and have ten minutes free, and then help you accomplish something that is high on your to-do list. AI is on the verge of making our lives more productive and creative.”</p>
+        </blockquote>
+        <figcaption class="my-1 blockquote-footer d-flex justify-content-end">
+            Bill Gates, Hit Refresh
+        </figcaption>
+      </figure>
+</div>
+
+<div class="container py-4">
+    <div class="row align-items-center">
+        <div class="col-md-6 my-2">
+            <h1 class="display-6 text-center"><span style="font-size: 24px;">Join Us</span></h1>
+            <p class="fw-light text-center">Are you ready to start building Wall-E with us (or maybe just work on our current projects)?<p>
+            <div class="row align-items-center my-4"><div class="col d-flex justify-content-center"><a type="button" class="btn btn-outline-dark text-center" href="/join/">JOIN</a></div></div>
+        </div>
+        <div class="col-md-6 my-2 d-flex justify-content-center">
+            <img style="object-fit: cover;" class="me-4" src="{{ url_for('static', filename='home/members.jpg') }}" height="300px;" width="auto;">
+        </div>
+    </div>
+</div>
+
+<div class="container py-4">
+    <div class="row align-items-center">
+        <div class="col-md-6 my-2 d-flex justify-content-center">
+            <img style="object-fit: cover;" class="me-4" src="{{ url_for('static', filename='home/ODUS_logo.png') }}" height="300px;" width="auto;">
+        </div>
+        <div class="col-md-6 my-2">
+            <p class="fw-light text-center">We are Princeton University’s Official Undergraduate Robotics Club. As an official ODUS student group, we welcome undergrads from every year and every major. We have members and alums representing all of these programs: Computer Science, Mechanical and Aerospace Engineering, Electrical Engineering, Mathematics, Operations Research and Financial Engineering, and Chemistry.<p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
